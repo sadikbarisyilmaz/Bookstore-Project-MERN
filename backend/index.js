@@ -5,7 +5,7 @@ import { Book } from "./models/bookModel.js";
 Book;
 import booksRoute from "./routes/bookRoute.js";
 const app = express();
-
+import cors from "cors";
 //Middleware for parsing reques body
 app.use(express.json());
 
@@ -13,9 +13,21 @@ app.use(express.json());
 app.use("/books", booksRoute);
 
 app.get("/", (req, res) => {
-  //   console.log(req);
   return res.status(234).send("Welcome to MERN");
 });
+
+//Middleware for CORS POLICY
+//Option 1: Allow All Origins with Defalt of cors(*)
+// app.use(cors());
+
+//Option 1: Allow Custom
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 
 mongoose
   .connect(mongoDBURL)
