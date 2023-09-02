@@ -8,7 +8,7 @@
 - Mongoose 🍃
 - Node.js 🚀
 - Express.js 🌐
-## Access the application in your web browser at `http://localhost:3000`.
+## Access the application in your web browser at `http://localhost:5555`.
 
 ## Features 🌟
 The Bookstore project offers the following features:
