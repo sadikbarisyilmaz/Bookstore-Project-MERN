@@ -1,7 +1,7 @@
 # Bookstore Project 📚
 
 ## Technologies Used 🚀
-- ⚛️ React
+- ⚛️ React.js
 - 🏎️ Vite
 - 🌈 Tailwind CSS
 - 📦 MongoDB
