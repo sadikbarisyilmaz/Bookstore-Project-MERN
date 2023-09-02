@@ -1,13 +1,13 @@
 # Bookstore Project 📚
 
 ## Technologies Used 🚀
-- React ⚛️
-- Vite 🏎️
-- Tailwind CSS 🌈
-- MongoDB 📦
-- Mongoose 🍃
-- Node.js 🚀
-- Express.js 🌐
+- ⚛️ React
+- 🏎️ Vite
+- 🌈 Tailwind CSS
+- 📦 MongoDB
+- 🍃 Mongoose
+- 🚀 Node.js
+- 🌐 Express.js
 ## Access the application in your web browser at `http://localhost:5555`.
 
 ## Features 🌟
