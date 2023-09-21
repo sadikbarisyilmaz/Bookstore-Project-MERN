@@ -1,9 +1,9 @@
 import express from "express";
 import "dotenv/config";
 import mongoose from "mongoose";
-import { Book } from "./models/bookModel.js";
+import { Book } from "../models/bookModel.js";
 Book;
-import booksRoute from "./routes/bookRoute.js";
+import booksRoute from "../routes/bookRoute.js";
 import cors from "cors";
 const PORT = process.env.PORT;
 const MONGODB_URI = process.env.MONGODB_URI;
