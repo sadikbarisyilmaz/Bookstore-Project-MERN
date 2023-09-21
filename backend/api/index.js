@@ -25,7 +25,7 @@ app.use(cors());
 // );
 //Middleware for bookRoute
 
-app.use("/books", booksRoute);
+app.use("/api/books", booksRoute);
 
 mongoose
   .connect(MONGODB_URI)
