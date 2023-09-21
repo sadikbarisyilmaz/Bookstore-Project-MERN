@@ -12,7 +12,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(`https://bookstore-project-mern.vercel.app/api/books/${id}`)
       .then((response) => {
         setBook(response.data.book);
         setLoading(false);
