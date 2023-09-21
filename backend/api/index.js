@@ -27,12 +27,12 @@ app.use(cors());
 
 // app.use("/books", booksRoute);
 
-app.get("/", (req, res) => {
+app.get("/api/", (req, res) => {
   return res.status(234).send("Welcome to MERN");
 });
 
 //Route for Save a new book
-app.post("/", async (req, res) => {
+app.post("/api/", async (req, res) => {
   try {
     if (!req.body.title || !req.body.author || !req.body.publishYear) {
       return res.status(400).send({
@@ -53,7 +53,7 @@ app.post("/", async (req, res) => {
 });
 
 //Route for get all books
-app.get("/books", async (req, res) => {
+app.get("/api/books", async (req, res) => {
   try {
     const books = await Book.find({});
     return res.status(200).json({
@@ -67,7 +67,7 @@ app.get("/books", async (req, res) => {
 });
 
 //Route for get one book
-app.get("/books/:id", async (req, res) => {
+app.get("/api/books/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const book = await Book.findById(id);
@@ -82,7 +82,7 @@ app.get("/books/:id", async (req, res) => {
 });
 
 //Route for Update a Book
-app.put("/books/:id", async (req, res) => {
+app.put("/api/books/:id", async (req, res) => {
   try {
     if (!req.body.title || !req.body.author || !req.body.publishYear) {
       return res.status(400).send({
